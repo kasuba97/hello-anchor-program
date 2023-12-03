@@ -1,0 +1,21 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+hello_anchor_program = "Fbso5qpyS8JED3abfXYYwFHSqToCb8fBGDssphiXgTPV"
+
+[programs.devnet]
+hello_anchor_program = "Fbso5qpyS8JED3abfXYYwFHSqToCb8fBGDssphiXgTPV"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/kasuba97/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
